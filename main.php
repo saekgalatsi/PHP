@@ -21,6 +21,7 @@ echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>';
 if (isset($_SESSION['username'])) {
     echo "Logged In: " . $_SESSION["username"];
     echo "<a href='main.php?logout=true'>Log Out</a>";
+    include 'pannel.php';
 } else {
     include 'login.php';
 }
